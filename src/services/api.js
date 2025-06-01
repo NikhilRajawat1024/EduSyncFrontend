@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = axios.create({ baseURL: "https://localhost:7288/api" });
+const API = axios.create({ baseURL: "https://edusyncwebapp-g8fce8drb3adcfdk.japaneast-01.azurewebsites.net/api" });
 
 API.interceptors.request.use(config => {
   const token = localStorage.getItem("token");
