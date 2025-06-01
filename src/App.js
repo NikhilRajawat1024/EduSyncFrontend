@@ -45,7 +45,7 @@ export default function App() {
   const handleLogout = () => {
     localStorage.removeItem("token");
     setIsLoggedIn(false);
-    window.location = "/login";
+    window.location = "/";
   };
 
   return (
