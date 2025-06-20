@@ -33,7 +33,7 @@ function isTokenValid() {
     const { exp } = jwtDecode(token);
     return exp * 1000 > Date.now();
   } catch {
-    return false
+    return false;
   }
 }
 
